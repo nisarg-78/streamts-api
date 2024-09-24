@@ -8,7 +8,8 @@ async function bootstrap() {
 			"http://localhost:5173",
 			"https://hlsstream.netlify.app",
 			"https://hlsstreamtest.netlify.app",
-    ]
+    ],
+    credentials: true
   });
   await app.listen(3000);
 }
