@@ -6,6 +6,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
 			"http://localhost:5173",
+			"https://streamts.enth.dev",
 			"https://hlsstream.netlify.app",
 			"https://hlsstreamtest.netlify.app",
     ],
