@@ -56,6 +56,9 @@ export class CredentialsService {
         {
           domain: domain,
           path: '/',
+          httpOnly: true,
+          secure: true,
+          sameSite: 'lax',
         },
       ],
       [
@@ -64,6 +67,9 @@ export class CredentialsService {
         {
           domain: domain,
           path: '/',
+          httpOnly: true,
+          secure: true,
+          sameSite: 'lax',
         },
       ],
       [
@@ -72,6 +78,9 @@ export class CredentialsService {
         {
           domain: domain,
           path: '/',
+          httpOnly: true,
+          secure: true,
+          sameSite: 'lax',
         },
       ],
     ];
