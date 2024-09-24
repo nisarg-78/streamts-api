@@ -34,6 +34,7 @@ export class VideosService {
         },
       });
       let masterM3U8Text = await masterM3U8.text();
+      console.log("masterM3U8Text", masterM3U8Text);
       masterM3U8Text = masterM3U8Text.replace(/https:\/\/cdn\.streamts\.tech/g, "<<<url>>>"); // how to patch 101
       masterM3U8Text = masterM3U8Text.replace(/<<<url>>>/g, cdn);
       return masterM3U8Text;
